@@ -1,0 +1,147 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex:1;
+}
+
+.navbar{
+    height: 5 rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+
+/* footer  */
+.f-info-links a{
+    text-decoration: none;
+    color: black;
+
+}
+.f-info-links{
+    margin-bottom: 0.5rem;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.f-info-socials{
+    display: flex;
+    gap: 1.5rem;
+}
+.f-info-socials i{
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    /* margin-right: 1rem; */
+
+}
+.f-info-brand{
+    color: black;
+}
+.f-info{
+    /* height: 6rem; */
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* cards */
+.listing-card{
+    border: none !important;
+    margin-bottom: 1.5rem;
+
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    
+
+}
+.card-text span{
+    display: inline-block;
+    font-weight: 500;
+}
+
+.listing-link{
+    text-decoration: none;
+    color: black;
+}
+
+/* card effect  */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+.add-btn{
+   background-color: #fe424d;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+/* Edit page  */
+.edit-btn{
+    background-color: #fe424d;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.form-label {
+    margin-bottom: .2rem;
+}
+.mb-3 {
+    margin-bottom: 0.9rem!important;
+}
+/* Show page  */
+.show-img{
+    height: 40vh;
+}
+.btns{
+    display: flex;
+    gap: 1rem;
+    margin-left: 0.90rem;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.alert{
+    margin-bottom: 0.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.alert-dismissible .btn-close{
+    padding:0.6rem 0.8rem;
+
+}
+.review-card{
+    padding-top: 0.2rem;
+    
+    padding-bottom: 0.6rem;
+    padding-left: 0.3rem;
+}
+
+.review-card h6{
+    margin-bottom: 0.2rem;
+}
+.review-card .starability-result{
+    margin-bottom: 0.4rem;
+}
+
+/* map */
+#map{
+    height: 300px;
+    width: 50vw;
+}

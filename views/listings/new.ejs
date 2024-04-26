@@ -1,0 +1,75 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+    <body>
+        <br>
+        <div class="row col-8 offset-2 ">
+            <!-- <div class="col-8 offset-2"> -->
+
+            <h3>Create a New Listing</h3>
+            <form action="/listings" class="needs-validation" novalidate method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="title" class="form-control" id="title" placeholder="enter title" required>
+                    <div class="valid-feedback">looks good!</div> <!-- form validation  suc & fal msg-->
+                    <div class="invalid-feedback">Please Enter Title</div>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="description" class="form-control" rows="2" id="description" cols="30"
+                        placeholder="enter description" rows="5" required></textarea>
+                    <div class="valid-feedback">looks good!</div>
+                    <div class="invalid-feedback">Please Enter Description</div>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Upload Listing Image</label>
+                    <input type="file" name="image" class="form-control" id="image" required>
+                </div>
+                <div class="row ">
+                    <div class="mb-3 col-md-4 ">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" name="price" placeholder="enter price" class="form-control" id="price"
+                            required>
+                        <div class="valid-feedback">looks good!</div>
+                        <div class="invalid-feedback">Please Enter Price</div>
+                    </div>
+                    <div class="mb-3 col-md-8 ">
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" name="location" class="form-control" id="location"
+                            placeholder="enter location" required>
+                        <div class="valid-feedback">looks good!</div>
+                        <div class="invalid-feedback">Please Enter Location</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" name="country" class="form-control" placeholder="enter country" id="country"
+                            required>
+                        <div class="valid-feedback">looks good!</div>
+                        <div class="invalid-feedback">Please Enter Country</div>
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+
+                        <label for="exampleDataList" class="form-label">Category</label>
+                        <input class="form-control" name="category" list="datalistOptions" id="exampleDataList"
+                            placeholder="Select Category Options" required>
+                        <datalist id="datalistOptions">
+                            <option value="Mountain">
+                            <option value="Lake">
+                            <option value="Forest">
+                            <option value="Beach">
+                            <option value="City">
+                                <option value="Castles">
+                                    <option value="Others">
+                        </datalist>
+                        <div class="valid-feedback">looks good!</div>
+                        <div class="invalid-feedback">Please Enter Category</div>
+                    </div>
+                    </div>
+                    <button class="btn add-btn btn-primary "> Add </button>
+            </form>
+            <!-- </div> -->
+        </div>
+        <br>
+    </body>
