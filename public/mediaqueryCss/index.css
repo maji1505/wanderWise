@@ -1,0 +1,62 @@
+/* media query listing page */
+
+@media (max-width: 914.29px){
+.container {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+    
+    .row{
+        /* gap: 1.8rem; */
+        width: 100vw;
+    }
+    .listing-card{
+      width: 17rem;
+    }
+
+}
+
+@media (max-width:865px) {
+    .listing-card {
+        width: 20rem;
+    }
+}
+@media (max-width:680px) {
+    .listing-card {
+        width: 17rem;
+    }
+}
+@media (max-width:588px) {
+    .listing-card {
+        width: 15rem;
+    }
+}
+@media (max-width:520px) {
+    .listing-card {
+        width: 20rem;
+    }
+}
+@media (max-width:360px) {
+    .listing-card {
+        width: 15rem;
+    }
+}
+@media (max-width:260px) {
+    .listing-card {
+        width: 80vw;
+    
+    }
+    .listing-card .card-img-top{
+     height: 55vw;
+    }
+    .listing-card .card-text{
+        font-size: 5.5vw;
+    }
+    .listing-card .card-body{
+        height: 30vw;
+    }
+    .navbar-toggler{
+        font-size: 13px;
+    }
+}

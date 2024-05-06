@@ -6,17 +6,35 @@ body{
 .container{
     flex:1;
 }
+.mrow{
+    justify-content: center;
+    gap: 1rem;
+}
 
 .navbar{
-    height: 5 rem;
-    background-color: white;
+    padding-top: 4px;
+    /* padding-bottom: 3px; */
+    background-color:white;
+
 }
+.navbar-toggler{
+    font-size: 15px;
+}
+
 .fa-compass{
     color: #fe424d;
     font-size: 2rem;
 }
 .nav-link{
     color: #222222 !important;
+}
+.nav-link:hover{
+    transform: scale(1.1);
+}
+@media (max-width:770px) {
+    .nav-link:hover{
+        transform: scale(1);
+    }
 }
 
 /* footer  */
@@ -39,8 +57,12 @@ body{
 .f-info-socials i{
     margin-top: 0.5rem;
     font-size: 1.3rem;
-    /* margin-right: 1rem; */
-
+    opacity: 0.8;
+}
+.f-info-socials i:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    opacity: 1;
 }
 .f-info-brand{
     color: black;
@@ -59,14 +81,35 @@ body{
 .listing-card{
     border: none !important;
     margin-bottom: 1.5rem;
+    
 
 }
 .card-img-top{
+height: 15rem;
     border-radius: 1rem !important;
     width: 100% !important;
     object-fit: cover !important;
     
 
+}
+.all-card{
+    box-shadow: 1px 1px 5px black;
+    padding: 0;
+    border-radius: 1rem;
+    width: 19rem;
+    transition:box-shadow 0.2s ease 0.1s;
+}
+.all-card:hover{
+    box-shadow: 4px 4px 10px black;
+}
+.show-card{
+    box-shadow: 1px 1px 10px lightgreen;
+    padding: 0;
+    border-radius: 1rem;
+    transition:1s;
+}
+.show-card:hover{
+    box-shadow: 3px 3px 12px green;
 }
 .card-text span{
     display: inline-block;

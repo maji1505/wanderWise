@@ -1,9 +1,16 @@
 <% layout("layouts/boilerplate.ejs") %>
-
+<style>
+    #filters{
+        display: none;
+    }
+    .category-line{
+        display:none;
+    }
+</style>
     <body>
 
-        <div class="row">
-            <div class="alert alert-danger col-8 offset-2 mt-3" role="alert">
+        <div class="row mrow">
+            <div class="alert alert-danger col-8  mb-1" role="alert">
                 <h5>
                     <%=message %>
                 </h5>

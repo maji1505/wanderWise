@@ -22,11 +22,12 @@ const listingsRouter=require("./routes/listing.js");// for routes require
 const reviewsRouter=require("./routes/review.js");  //for routes require
 const userRouter=require("./routes/user.js");
 
-// const MONGO_URL="mongodb://127.0.0.1:27017/wanderlust";
+const MONGO_URL="mongodb://127.0.0.1:27017/wanderlust";
 const dbUrl=process.env.ATLASDB_URL;
 
 async function main(){
     await mongoose.connect(dbUrl);
+    // await mongoose.connect(MONGO_URL)
     console.log("connection successful");
 }
 
@@ -45,6 +46,7 @@ app.use(express.static(path.join(__dirname,"/public")));
 
 const store=MongoStore.create({
     mongoUrl:dbUrl,
+    // mongoUrl:MONGO_URL,
     crypto:{
         secret:process.env.SECRET
     },
@@ -81,6 +83,10 @@ app.use((req,res,next)=>{                         //send flash message using res
     next();
 });
 
+app.get("/",async(req,res)=>{
+    let allListings= await Listing.find();
+    res.render("listings/index.ejs",{allListings});
+})
 /////// routes use for remove common path like listings//////////////
 //using routes listing.js .. for remove common path /listings
    app.use("/listings",listingsRouter);

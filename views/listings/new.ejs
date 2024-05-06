@@ -1,11 +1,18 @@
 <% layout("layouts/boilerplate.ejs") %>
-
+<style>
+    #filters{
+        display: none;
+    }
+    .category-line{
+        display:none;
+    }
+</style>
     <body>
-        <br>
-        <div class="row col-8 offset-2 ">
+    
+        <div class="row mrow col-8 offset-2" style="gap: 0.5rem;">
             <!-- <div class="col-8 offset-2"> -->
 
-            <h3>Create a New Listing</h3>
+            <h3 class=" mt-1 mb-0" >Create a New Listing</h3>
             <form action="/listings" class="needs-validation" novalidate method="post" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
@@ -25,14 +32,14 @@
                     <input type="file" name="image" class="form-control" id="image" required>
                 </div>
                 <div class="row ">
-                    <div class="mb-3 col-md-4 ">
+                    <div class="mb-3 col-md-5 ">
                         <label for="price" class="form-label">Price</label>
                         <input type="number" name="price" placeholder="enter price" class="form-control" id="price"
                             required>
                         <div class="valid-feedback">looks good!</div>
                         <div class="invalid-feedback">Please Enter Price</div>
                     </div>
-                    <div class="mb-3 col-md-8 ">
+                    <div class="mb-3 col-md-7 ">
                         <label for="location" class="form-label">Location</label>
                         <input type="text" name="location" class="form-control" id="location"
                             placeholder="enter location" required>
@@ -41,7 +48,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3 col-md-6">
+                    <div class="mb-3 col-md-5">
                         <label for="country" class="form-label">Country</label>
                         <input type="text" name="country" class="form-control" placeholder="enter country" id="country"
                             required>
@@ -49,7 +56,7 @@
                         <div class="invalid-feedback">Please Enter Country</div>
                     </div>
 
-                    <div class="mb-3 col-md-6">
+                    <div class="mb-3 col-md-7">
 
                         <label for="exampleDataList" class="form-label">Category</label>
                         <input class="form-control" name="category" list="datalistOptions" id="exampleDataList"
