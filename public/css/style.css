@@ -103,7 +103,7 @@ height: 15rem;
     box-shadow: 4px 4px 10px black;
 }
 .show-card{
-    box-shadow: 1px 1px 10px lightgreen;
+    /* box-shadow: 1px 1px 10px lightgreen; */
     padding: 0;
     border-radius: 1rem;
     transition:1s;
