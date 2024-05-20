@@ -93,14 +93,15 @@ height: 15rem;
 
 }
 .all-card{
-    box-shadow: 1px 1px 5px black;
+/*     box-shadow: 1px 1px 5px black; */
     padding: 0;
     border-radius: 1rem;
     width: 19rem;
     transition:box-shadow 0.2s ease 0.1s;
 }
 .all-card:hover{
-    box-shadow: 4px 4px 10px black;
+/*     box-shadow: 4px 4px 10px black; */
+        box-shadow: 1px 1px 5px black;
 }
 .show-card{
     /* box-shadow: 1px 1px 10px lightgreen; */
